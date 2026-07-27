@@ -57,7 +57,7 @@ export function About() {
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-2">
-                  अधिवक्ता भारत लाल चौरसिया
+                  अधिवक्ता भरत लाल चौरसिया
                 </h3>
                 <p className="text-gold-400 font-medium mb-6">
                   अनुभवी अधिवक्ता एवं कानूनी सलाहकार
