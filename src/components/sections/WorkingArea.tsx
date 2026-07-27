@@ -77,33 +77,37 @@ export function WorkingArea() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-navy-900/20 border border-gold-500/20">
               <div className="aspect-square max-h-[400px] sm:max-h-none bg-gradient-to-br from-navy-800 via-navy-900 to-navy-800 p-4 sm:p-8 flex items-center justify-center">
                 {/* Stylized map representation */}
-                <div className="relative w-full h-full max-w-md">
+                <div className="relative w-full h-full max-w-md mx-auto">
+                  {/* Outer border */}
                   <div className="absolute inset-0 rounded-2xl border-2 border-gold-500/20" />
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full border border-gold-500/30" />
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full border border-gold-500/40" />
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-gold-500/20 animate-pulse" />
 
-                  {/* Location markers */}
-                  <div className="absolute top-1/3 left-1/3 flex flex-col items-center">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold-500 shadow-lg shadow-gold-500/30">
-                      <Landmark className="h-5 w-5 text-navy-900" />
+                  {/* Concentric circles - responsive sizing */}
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 sm:w-40 lg:w-48 h-32 sm:h-40 lg:h-48 rounded-full border border-gold-500/30" />
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 sm:w-24 lg:w-32 h-20 sm:h-24 lg:h-32 rounded-full border border-gold-500/40" />
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 sm:w-12 lg:w-16 h-10 sm:h-12 lg:h-16 rounded-full bg-gold-500/20 animate-pulse" />
+
+                  {/* Location markers - spread apart on mobile */}
+                  <div className="absolute top-[15%] sm:top-1/4 left-[15%] sm:left-1/4 flex flex-col items-center">
+                    <div className="flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-full bg-gold-500 shadow-lg shadow-gold-500/30">
+                      <Landmark className="h-4 w-4 sm:h-5 sm:w-5 text-navy-900" />
                     </div>
-                    <span className="mt-2 text-xs font-bold text-white bg-navy-900/80 px-2 py-1 rounded">
+                    <span className="mt-1.5 sm:mt-2 text-[10px] sm:text-xs whitespace-nowrap font-bold text-white bg-navy-900/80 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded">
                       लालगंज तहसील
                     </span>
                   </div>
 
-                  <div className="absolute bottom-1/3 right-1/4 flex flex-col items-center">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold-500 shadow-lg shadow-gold-500/30">
-                      <Building2 className="h-5 w-5 text-navy-900" />
+                  <div className="absolute bottom-[15%] sm:bottom-1/4 right-[15%] sm:right-1/4 flex flex-col items-center">
+                    <div className="flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-full bg-gold-500 shadow-lg shadow-gold-500/30">
+                      <Building2 className="h-4 w-4 sm:h-5 sm:w-5 text-navy-900" />
                     </div>
-                    <span className="mt-2 text-xs font-bold text-white bg-navy-900/80 px-2 py-1 rounded">
-                      मिर्जापुर जिला न्यायालय
+                    <span className="mt-1.5 sm:mt-2 text-[10px] sm:text-xs whitespace-nowrap font-bold text-white bg-navy-900/80 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded">
+                      <span className="sm:hidden">मिर्जापुर</span>
+                      <span className="hidden sm:inline">मिर्जापुर जिला न्यायालय</span>
                     </span>
                   </div>
 
-                  <div className="absolute bottom-8 left-8 flex items-center gap-2 text-white/70 text-sm">
-                    <CircleDot className="h-4 w-4 text-gold-400" />
+                  <div className="absolute bottom-4 left-3 sm:bottom-8 sm:left-8 flex items-center gap-1.5 sm:gap-2 text-white/70 text-[10px] sm:text-sm">
+                    <CircleDot className="h-3 w-3 sm:h-4 sm:w-4 text-gold-400" />
                     <span>उत्तर प्रदेश</span>
                   </div>
                 </div>
