@@ -146,40 +146,40 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="relative flex justify-center lg:justify-end"
           >
-            <div className="relative">
+            <div className="relative mx-auto max-w-[280px] sm:max-w-none">
               {/* Outer glow ring */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gold-400/30 to-gold-600/20 blur-2xl scale-110" />
 
               {/* Avatar circle */}
-              <div className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-gold-400 via-gold-500 to-gold-600 p-1 shadow-2xl shadow-gold-500/20">
+              <div className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-gold-400 via-gold-500 to-gold-600 p-1 shadow-2xl shadow-gold-500/20">
                 <div className="w-full h-full rounded-full bg-gradient-to-br from-navy-700 to-navy-900 flex items-center justify-center overflow-hidden border-4 border-navy-900">
                   <div className="text-center">
-                    <Scale className="h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 text-gold-400 mx-auto mb-4" />
-                    <p className="text-2xl sm:text-3xl font-bold text-white">न्याय</p>
-                    <p className="text-sm text-gold-400 mt-1">सत्यमेव जयते</p>
+                    <Scale className="h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28 lg:h-32 lg:w-32 text-gold-400 mx-auto mb-3 sm:mb-4" />
+                    <p className="text-xl sm:text-2xl md:text-3xl font-bold text-white">न्याय</p>
+                    <p className="text-xs sm:text-sm text-gold-400 mt-1">सत्यमेव जयते</p>
                   </div>
                 </div>
               </div>
 
-              {/* Decorative badges */}
+              {/* Decorative badges - hidden on very small screens, repositioned on mobile */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 1 }}
-                className="absolute -right-4 top-1/4 glass rounded-2xl px-4 py-3 shadow-xl"
+                className="absolute -right-2 sm:-right-4 top-1/4 glass rounded-xl sm:rounded-2xl px-3 sm:px-4 py-2 sm:py-3 shadow-xl"
               >
-                <p className="text-2xl font-bold text-gold-400">6+</p>
-                <p className="text-xs text-white/80">वर्षों का अनुभव</p>
+                <p className="text-lg sm:text-2xl font-bold text-gold-400">6+</p>
+                <p className="text-[10px] sm:text-xs text-white/80">वर्षों का अनुभव</p>
               </motion.div>
 
               <motion.div
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 1.1 }}
-                className="absolute -left-4 bottom-1/4 glass rounded-2xl px-4 py-3 shadow-xl"
+                className="absolute -left-2 sm:-left-4 bottom-1/4 glass rounded-xl sm:rounded-2xl px-3 sm:px-4 py-2 sm:py-3 shadow-xl"
               >
-                <p className="text-2xl font-bold text-gold-400">50+</p>
-                <p className="text-xs text-white/80">सफल मामले</p>
+                <p className="text-lg sm:text-2xl font-bold text-gold-400">50+</p>
+                <p className="text-[10px] sm:text-xs text-white/80">सफल मामले</p>
               </motion.div>
             </div>
           </motion.div>

@@ -29,7 +29,7 @@ function StatCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: delay / 1000, duration: 0.5 }}
-      className="relative rounded-2xl bg-gradient-to-br from-navy-800 to-navy-900 border border-gold-500/20 p-8 text-center shadow-xl shadow-black/20 hover:border-gold-500/40 transition-colors"
+      className="relative rounded-2xl bg-gradient-to-br from-navy-800 to-navy-900 border border-gold-500/20 p-6 sm:p-8 text-center shadow-xl shadow-black/20 hover:border-gold-500/40 transition-colors"
     >
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-gold-500/5 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
       <div className="relative">

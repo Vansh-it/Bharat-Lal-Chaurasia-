@@ -49,7 +49,7 @@ export function Services() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.08, duration: 0.5 }}
                 whileHover={{ y: -8 }}
-                className="group relative rounded-2xl bg-gradient-to-br from-navy-800 to-navy-900 border border-white/10 p-6 shadow-xl shadow-black/20 hover:border-gold-500/30 transition-colors"
+                className="group relative rounded-2xl bg-gradient-to-br from-navy-800 to-navy-900 border border-white/10 p-5 sm:p-6 shadow-xl shadow-black/20 hover:border-gold-500/30 transition-colors"
               >
                 {/* Hover glow */}
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-gold-500/0 to-gold-500/0 group-hover:from-gold-500/5 group-hover:to-transparent transition-all duration-500" />

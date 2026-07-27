@@ -75,7 +75,7 @@ export function WorkingArea() {
             className="relative"
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-navy-900/20 border border-gold-500/20">
-              <div className="aspect-square bg-gradient-to-br from-navy-800 via-navy-900 to-navy-800 p-8 flex items-center justify-center">
+              <div className="aspect-square max-h-[400px] sm:max-h-none bg-gradient-to-br from-navy-800 via-navy-900 to-navy-800 p-4 sm:p-8 flex items-center justify-center">
                 {/* Stylized map representation */}
                 <div className="relative w-full h-full max-w-md">
                   <div className="absolute inset-0 rounded-2xl border-2 border-gold-500/20" />

@@ -18,7 +18,7 @@ export function SectionTitle({ title, subtitle, centered = true, light = false }
         className="inline-block"
       >
         <h2
-          className={`text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight ${
+          className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight ${
             light ? "text-white" : "text-navy-900"
           }`}
         >

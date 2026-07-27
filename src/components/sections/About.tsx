@@ -46,7 +46,7 @@ export function About() {
             transition={{ duration: 0.7 }}
             className="relative"
           >
-            <div className="relative rounded-3xl bg-gradient-to-br from-navy-800 to-navy-900 p-8 md:p-12 shadow-2xl shadow-navy-900/20 overflow-hidden">
+            <div className="relative rounded-3xl bg-gradient-to-br from-navy-800 to-navy-900 p-6 sm:p-8 md:p-12 shadow-2xl shadow-navy-900/20 overflow-hidden">
               <div className="absolute top-0 right-0 w-40 h-40 bg-gold-500/10 rounded-full blur-3xl" />
               <div className="absolute bottom-0 left-0 w-32 h-32 bg-maroon-700/10 rounded-full blur-3xl" />
 

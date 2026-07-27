@@ -85,7 +85,7 @@ export function Contact() {
             transition={{ duration: 0.6 }}
             className="space-y-6"
           >
-            <div className="rounded-3xl bg-gradient-to-br from-navy-800 to-navy-900 border border-white/10 p-8 shadow-xl">
+            <div className="rounded-3xl bg-gradient-to-br from-navy-800 to-navy-900 border border-white/10 p-6 sm:p-8 shadow-xl">
               <h3 className="text-2xl font-bold text-white mb-6">
                 संपर्क <span className="text-gold-400">जानकारी</span>
               </h3>
@@ -145,7 +145,7 @@ export function Contact() {
           >
             <form
               onSubmit={handleSubmit}
-              className="rounded-3xl bg-white p-8 shadow-2xl shadow-black/20"
+              className="rounded-3xl bg-white p-6 sm:p-8 shadow-2xl shadow-black/20"
             >
               <h3 className="text-2xl font-bold text-navy-900 mb-6">
                 संदेश भेजें

@@ -32,7 +32,7 @@ export function LawQuotes() {
 
         <div className="relative">
           {/* Main quote card */}
-          <div className="relative min-h-[280px] md:min-h-[240px]">
+          <div className="relative min-h-[260px] sm:min-h-[240px] md:min-h-[220px]">
             <AnimatePresence mode="wait">
               <motion.div
                 key={current}
@@ -40,9 +40,9 @@ export function LawQuotes() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -50 }}
                 transition={{ duration: 0.5 }}
-                className="absolute inset-0 rounded-3xl bg-gradient-to-br from-navy-800 to-navy-900 p-8 md:p-12 shadow-2xl shadow-navy-900/20"
+                className="absolute inset-0 rounded-3xl bg-gradient-to-br from-navy-800 to-navy-900 p-6 sm:p-8 md:p-12 shadow-2xl shadow-navy-900/20"
               >
-                <Quote className="absolute top-6 left-6 h-16 w-16 text-gold-500/20" />
+                <Quote className="absolute top-4 left-4 sm:top-6 sm:left-6 h-10 w-10 sm:h-12 sm:w-12 md:h-16 md:w-16 text-gold-500/20" />
 
                 <div className="relative flex flex-col items-center text-center">
                   <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-white leading-relaxed">
